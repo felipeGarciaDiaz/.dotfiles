@@ -1,0 +1,38 @@
+colors:
+  primary:
+    background: '0x111111'
+    color: '0xFFFFFF'
+
+window:
+  dimensions:
+    columns: 60
+    lines: 240
+    
+font:
+  family: 'Space Mons'
+  size: 5.0
+
+scrolling:
+  history: 5000
+
+cursor:
+  style:
+    shape: 'underline'
+    blinking: 'On'
+
+shell:
+  program: '/bin/bash'
+  args:
+    - --rcfile
+    - ~/.bashrc
+    
+
+mouse: 
+  enable: true
+
+dynamic-titles: true
+key_bindings:
+  - { key: V, mods: Control, action: copy }
+  - { key: P, mods: Control, action: paste }
+  - { key: S, mods: Control, action: SearchForward }
+  - { key: T, mods: Control, action: SpawnNewInstance }
