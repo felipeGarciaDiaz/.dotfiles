@@ -1,0 +1,172 @@
+configuration {
+    modi: "combi,run,window,ssh,drun";
+    combi-modi: "window,run,ssh,drun";
+    terminal: "alacritty";
+    columns: 1;
+    font: "Space Mons 9";
+    show-icons: true;
+    drun-match-fields: "name,generic,exec,categories";
+    levenshtein-sort: true;
+    matching: "fuzzy";
+    /* ... any other configurations ... */
+}
+
+/* Window */
+window {
+    background-color: #222222;
+    border: 5px;
+    border-color: #B61515;
+    padding: 5px;
+    opacity: 100%;
+    border-radius: 5px;
+}
+
+/* Main Box */
+mainbox {
+    border-color: #222222;
+    background-color: #222222;
+    spacing: 0px;
+    padding: 0px;
+}
+
+/* Message */
+message {
+    background-color: #b90000;
+    text-color: #ffffff;
+    spacing: 50px;
+    padding: 50px;
+    border: 50px;
+    border-color: #000000;
+}
+
+prompt {
+    background-color: #222222;
+    border-color: #222222;
+    text-color: #ffffff;
+    border: 2px;
+    padding: 5px;
+    opacity: 100%;
+    border-radius: 0px;
+}
+/* List View */
+listview {
+    lines: 5;
+    fixed-height: 100;
+    border-color: #222222;
+    background-color: #222222;
+    scrollbar: true;
+    scrollbar-width: 40;
+    spacing: 0px;
+    padding: 0px;
+}
+
+
+#element.selected {
+    background-color: #FFD148;
+    text-color: #000000;
+}
+
+#element.urgent {
+    background-color: #FFD148;
+    text-color: #000000;
+}
+
+#element.active {
+    background-color: #FFD148;
+    text-color: #000000;
+}
+
+/* Input Bar */
+inputbar {
+    children: [sidebar];
+
+}
+
+/* Case Indicator */
+case-indicator {
+    border-color: #222222;
+    background-color: #333333;
+    text-color: #ffffff;
+}
+
+
+
+/* Scrollbar */
+scrollbar {
+    border-color: #B61515;
+    background-color: #111111;
+    handle-color: #B61515;
+    handle-hover-color: #B61515;
+    handle-active-color: #B61515;
+    active-border-radius: 50px;
+    padding: 5px;
+}
+
+/* Sidebar */
+sidebar {
+    border-color: #222222;
+    background-color: #222222;
+    spacing: 15px;
+    padding: 0px;
+}
+
+/* Additional Elements (may vary based on Rofi version) */
+separator {
+    background-color: #222222;
+    spacing: 250px;
+}
+
+button {
+    text-color: #ffffff;
+    background-color: #D72D21;
+    border-color: #222222;
+    border-radius: 500px;
+    padding: 10px 50px;
+    margin: 5px;
+}
+
+button selected {
+    background-color: #3F88C5;
+}
+
+
+#element {
+    padding: 5;
+    border: 1;
+    border-radius: 3;
+    border-color: #111111;
+    background-color: #C3C8CB;
+}
+
+#element.normal.normal {
+    background-color: #C3C8CB;
+}
+
+#element.normal.urgent {
+    background-color: #D72D21;
+}
+
+#element.normal.active {
+    text-color: #111111;
+    border-color: #111111;
+    background-color: #FFD148;
+
+}
+
+#element.selected.normal {
+    background-color:#D72D21;
+    border-color:     #111111;
+    color:            #C3C8CB;
+}
+
+#element.selected.urgent {
+    background-color: #B61515;
+    border-color:     #b90000;
+}
+
+#element.selected.active {
+    background-color: #FFD148;
+    border-color:     #FFD148;
+    color:            #111111;
+}
+
